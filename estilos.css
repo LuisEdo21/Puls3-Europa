@@ -83,6 +83,29 @@ header #logo img
 {
 	width: 80px;
 }
+header #boton_home
+{
+	background: #22BCE0;
+	border-radius: 0.5em 0.5em 0 0;
+	color: white;
+	float: right;
+	font-size: 0.8em;
+	margin: 67px 0 0 0;
+	padding: 0.3em 0.6em;
+	position: fixed;
+	text-decoration: none;
+	width: 85px;
+}
+header #boton_home:after
+{
+	color: rgba(255, 255, 255, 0.5);
+	content: "\e000";
+	font-family: "icomoon";
+	font-size: 1em;
+	position: absolute;
+	right: 7px;
+	top: 6px;
+}
 nav
 {
 	background: #878787;
@@ -147,7 +170,7 @@ nav #publicar_nav a
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
-#bienvenida
+#bienvenida, #ultima_actividad
 {
 	display: none;
 }
@@ -188,7 +211,7 @@ nav #publicar_nav a
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
-#contenido .item
+#contenido .item, #contenido #primer_item
 {
 	border-bottom: 3px #22BCE0 solid;
 	background: white;
@@ -196,31 +219,31 @@ nav #publicar_nav a
 	min-height: 128px;
 	position: relative;
 }
-#contenido .item p 
+#contenido .item p, #contenido #primer_item p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
-#contenido .item .imagen_item
+#contenido .item .imagen_item, #contenido #primer_item .imagen_item
 {
 	float: left;
 	margin: 0 0.5em 0 0;
 }
-#contenido .item .imagen_item img 
+#contenido .item .imagen_item img, #contenido #primer_item .imagen_item img
 {
 	width: 96px;
 }
-#contenido .item .titulo_item
+#contenido .item .titulo_item, #contenido #primer_item .titulo_item
 {
 	font-size: 1rem;
 	padding: 0.5em 0.5em 0;
 }
-#contenido .item .titulo_item a 
+#contenido .item .titulo_item a, #contenido #primer_item .titulo_item a
 {
 	color: #444;
 	text-decoration: none;
 }
-#contenido .item .votacion
+#contenido .item .votacion, #contenido #primer_item .votacion
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
@@ -231,21 +254,25 @@ nav #publicar_nav a
 	top: 103%;
 	width: 96px;
 }
-#contenido .item .votacion a
+#contenido .item .votacion a, #contenido #primer_item .votacion a
 {
 	text-decoration: none;
 }
 #contenido .item .votacion .down:after,
-#contenido .item .votacion .up:after
+#contenido #primer_item .votacion .down:after,
+#contenido .item .votacion .up:after, 
+#contenido #primer_item .votacion .up:after
 {
 	font-family: "icomoon";
 }
-#contenido .item .votacion .up:after
+#contenido .item .votacion .up:after,
+#contenido #primer_item .votacion .up:after
 {
 	color: green;
 	content: "\e000"
 }
-#contenido .item .votacion .down:after
+#contenido .item .votacion .down:after,
+#contenido #primer_item .votacion .down:after
 {
 	color: red;
 	content: "\e001";

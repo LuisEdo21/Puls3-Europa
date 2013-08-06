@@ -5,12 +5,17 @@
 		margin: 0 auto;
 		max-width: 1200px;
 	}
-	#bienvenida
+	#bienvenida, #ultima_actividad
 	{
 		display: block;
 		float: right;
-		margin: 1em;
+		margin: -1em 1em;
 		padding: 0.5em;
+		width: 25%;
+	}
+	#bienvenida
+	{
+		border-bottom: 1.5px rgba(150, 150, 150, 0.5) solid;
 	}
 	#bienvenida h2
 	{
@@ -24,13 +29,99 @@
 	#bienvenida #registro
 	{
 		background: #22BCE0;
+		box-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,0.3) ;
 		color: white;
 		display: block;
 		font-size: 1.2em;
+		bottom: 10em;
+		margin: 0 2em 0 0;
+		padding: 0.4em;
+		text-align: center;
+		text-decoration: none;
+		width: 90%;
+	}
+	#contenido .item:first-of-type
+	{
+		width: 70%;
+		border-bottom: 3px #FF7800 solid;
+	}
+	#contenido #primer_item
+	{
+		background: url("fondo.jpg");
+		background-size: 100%;
+		border-bottom: 3px #FF7800 solid;
+		min-height: 350px;
+		position: relative;
+		width: 70%;
+	}
+	#contenido #primer_item .datos_item
+	{
+		display: none;
+	}
+	#contenido #primer_item .imagen_item img
+	{
+		display: none;
+	}
+	#contenido #primer_item #contenedor
+	{
+		background: rgba(200, 200, 200, 0.7);
+		bottom: 20em;
+		display: block;
+		height: 65px;
+		left: 96px;
+		position: relative;
+		top: 285px;
+		width: 88.3%;
+		z-index: 0;
+	}   
+	#contenido #primer_item .votacion
+	{
+		background: rgba(200, 200, 200, 0.7);
+		border-radius: 0;
+		display: block;
+		position: relative;
+		top: 217px;
+	}
+	#contenido #primer_item .votacion a
+	{
+		display: block;
+	}
+	#ultima_actividad
+	{
+		position: relative;
+		left: 21.3em;
+		top: 14.5em;
+	}
+	#ultima_actividad .H2_Actividad
+	{
+		background: #FD3F49;
+		color: white;
+		font-size: 1.2em;
+		font-weight: normal;
+		padding: 0.2em;
+		text-align: center;
 		text-decoration: none;
 	}
-	#contenido .item:first-child 
+	#ultima_actividad .numero_de_actividad
 	{
-		width: 60%;
+		background: #FD3F49;
+		color: white;
+		padding: 0.4em;
+		text-decoration: none;
+	}
+	#ultima_actividad .linea_divisoria 
+	{
+		border-bottom: 1px rgba(150, 150, 150, 0.5) solid;
+	}
+	#ultima_actividad .contenido_ultima_act
+	{
+		color: rgba(100, 100, 100, 0.8);
+		bottom: 11em;
+		width: 70%;
+	}
+	#ultima_actividad .contenido_ultima_act, #ultima_actividad .numero_de_actividad
+	{
+		display: inline-block;
+		vertical-align: top;
 	}
 }
